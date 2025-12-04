@@ -30,6 +30,7 @@
   <body>
     <section>
       <main>
+        <div id="tsparticles"></div>
         <img src="Image/Profile.jpg" alt="Sapnap" />
         <!-- PROFILE PITCURE -->
         <h1><b>SAPNAP</b></h1>
@@ -37,20 +38,29 @@
 
         <!-- LINK TREE -->
         <a href="https://github.com/Sapnap00000"
-          ><i class="fa-brands fa-github"></i>Github</a
+          ><i class="fa-brands fa-github fa-2x"></i>Github</a
         >
         <a href="https://discordapp.com/users/1329741776726265857"
-          ><i class="fa-brands fa-discord"></i>Discord</a
+          ><i class="fa-brands fa-discord fa-2x"></i>Discord</a
         >
-        <a href=" ttps://xteknikpermesinan1.blogspot.com"
-          ><i class="fa-brands fa-blogger"></i>Blogger</a
+        <a href="https://link.chess.com/friend/cgv2CG"><i class="fa-solid fa-chess fa-2x"></i>Chess</a
         >
       </main>
+      <!-- Tombol Musik On/Off -->
+      <div class="music-toggle" id="musicBtn">
+        <i class="fas fa-volume-up" id="musicIcon"></i>
+      </div>
+      <audio id="bgm" loop>
+        <source src="Sound/N°026 - relaxdaily.mp3" type="audio/mp3" />
+      </audio>
 
       <footer>
         <!-- FOOTER SECTION -->
         <p>&copy; 2025 Sapnap. All rights reserved.</p>
       </footer>
     </section>
+    <!-- tsParticles (partikel bintang/nebula) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+    <script src="ScriptLinkTree.js"></script>
   </body>
 </html>
