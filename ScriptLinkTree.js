@@ -47,9 +47,9 @@ let isPlaying = false;
 
 musicBtn.addEventListener("click", () => {
   if (isPlaying) {
-    bgm.pause();
-  } else {
     bgm.play().catch(() => {});
+  } else {
+    bgm.pause();
   }
   isPlaying = !isPlaying;
   musicIcon.classList.toggle("fa-volume-up");

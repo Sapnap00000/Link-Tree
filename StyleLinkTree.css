@@ -29,7 +29,7 @@ section {
   z-index: 10;
 }
 section main {
-  padding: 50px 10px;
+  padding: 60px 10px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -38,9 +38,24 @@ section main {
   justify-content: center;
   align-items: center;
 }
+.crown-container {
+  position: relative;
+  display: inline-block;
+}
+.crown {
+  position: absolute;
+  top: -90px; /* Adjust this value to position the crown higher or lower */
+  left: 16%;
+  transform: translateX(-50%);
+  width: 190px;
+  height: 160px;
+  z-index: 1;
 
+  animation: pulse 6s infinite;
+  animation: float 4s ease-in-out infinite;
+}
 /* PROFILE IMAGE AND TITLE */
-section main img {
+section main .Profile {
   width: 100%;
   max-width: 250px;
   height: auto;
